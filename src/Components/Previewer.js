@@ -1,4 +1,6 @@
 import ToolBar from "./ToolBar";
+import placeholder from "./PlaceHolder";
+import marked from "marked";
 
 function Previewer() {
   return (
@@ -9,4 +11,10 @@ function Previewer() {
   );
 }
 
+setTimeout(() => {
+  const preText = document.querySelector(".previewerText");
+  preText.innerHTML = marked(placeholder);
+  document.querySelector(".loader").style.visibility = "hidden";
+  document.getElementById("container").style.visibility = "visible";
+}, 100);
 export default Previewer;
