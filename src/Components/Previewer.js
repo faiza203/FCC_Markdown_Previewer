@@ -4,7 +4,7 @@ import marked from "marked";
 
 function Previewer() {
   return (
-    <div className="previewer">
+    <div className="previewer" id="preview">
       <ToolBar name="Previewer" id="preTool" />
       <div className="previewerText"></div>
     </div>

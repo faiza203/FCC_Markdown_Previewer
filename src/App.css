@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
 body {
   background-color: #87b5b5;
+  display: flex;
+  justify-content: center;
 }
 
 #container {
@@ -34,4 +38,91 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.editor {
+  width: 80vw;
+}
+
+.toolbar {
+  background-color: #4aa3a3;
+  padding: 4px 3px;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-size: 15px;
+  font-family: "Russo One", sans-serif;
+}
+
+.toolbar i {
+  color: black;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.fa-arrows-alt {
+  float: right;
+  margin-right: -5px;
+}
+
+.editor {
+  margin: 18px auto;
+}
+.editor textarea,
+.previewer {
+  background-color: #c0d8d8;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  width: 99%;
+  min-height: 200px;
+  outline: none;
+  resize: vertical;
+  padding: 5px 1px 0 5px;
+  font-size: 12px;
+  margin-bottom: -5px;
+  border-top: none;
+  overflow: overlay;
+}
+
+.previewer {
+  padding: 0;
+  width: 90vw;
+  margin: 20px auto;
+}
+
+.previewerText {
+  margin-left: 5px;
+  border: 1px solid #1d2f2f;
+  border-left: 0;
+}
+
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#preview code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#preview pre {
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
 }
